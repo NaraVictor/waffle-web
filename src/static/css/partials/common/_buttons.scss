@@ -1,0 +1,50 @@
+@import "./colors";
+
+@mixin button {
+	padding: 7px 15px;
+	border-radius: 20px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.button {
+	@include button();
+}
+
+.button__default {
+	color: $wf--primary;
+	text-decoration: none;
+	background-color: white;
+	border: 3px solid $wf--primary;
+
+	&:hover {
+		background-color: $wf--background;
+		cursor: pointer;
+		text-decoration: underline;
+		transition: all 0.5s;
+	}
+}
+
+.button__primary {
+	color: white;
+	background-color: $wf--primary;
+	text-decoration: none;
+	border: none;
+
+	&:hover {
+		background-color: $wf--primary-shaded;
+		transition: background-color 1s;
+		cursor: pointer;
+	}
+}
+
+.button--big {
+	padding: 10px 20px;
+	border-radius: 25px;
+	font-size: 17px;
+}
+
+.button--heavy {
+	font-weight: 700;
+}
