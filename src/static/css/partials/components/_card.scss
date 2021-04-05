@@ -1,0 +1,50 @@
+@import "../common/colors";
+
+@mixin cardTitle {
+	font-weight: 600;
+	color: $wf--black-80;
+	margin: 0px;
+}
+
+.card {
+	background-color: white;
+	// border: 1px solid $wf--gray;
+	border-radius: 10px;
+	position: absolute;
+	padding: 0px;
+	box-shadow: 1px 1px 1px #ddd;
+}
+
+.card--title {
+	@include cardTitle();
+	padding: 15px 10px;
+	border-bottom: 1px solid $wf--gray;
+}
+
+.card__list-item {
+	position: relative;
+	padding: 15px 10px;
+	border-bottom: 1px solid $wf--gray;
+
+	&:last-child {
+		border-bottom: 0px;
+		border-radius: 0 0 10px 10px;
+	}
+
+	&:hover {
+		background-color: $wf--black-10;
+		cursor: pointer;
+	}
+}
+
+.card__list--title {
+	@include cardTitle();
+	padding: 0px;
+}
+
+.card__list--text {
+	font-weight: 400;
+	color: $wf--black-shaded;
+	font-size: 14px;
+	margin: 3px 0px;
+}

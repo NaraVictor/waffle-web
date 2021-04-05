@@ -1,0 +1,10 @@
+@import "../common/colors";
+
+.canvas {
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid $wf--gray;
+	padding: 10px;
+	box-sizing: border-box;
+	min-width: 100%;
+}

@@ -1,0 +1,29 @@
+@import "../common/colors";
+
+.search {
+	border-radius: 1.25rem;
+	position: absolute;
+	background-color: $wf--black-10;
+	display: flex;
+}
+
+.search__input {
+	width: 85%;
+	background-color: transparent;
+	border: none;
+	right: 0;
+	margin: 1.5% 0;
+	font-size: 1rem;
+
+	&:focus {
+		outline: none;
+		// border: none;
+	}
+}
+
+.search__icon {
+	position: relative;
+	width: 5%;
+	padding: 10px;
+	margin-left: 5px;
+}

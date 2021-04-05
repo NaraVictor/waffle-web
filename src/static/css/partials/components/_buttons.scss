@@ -1,10 +1,9 @@
-@import "./colors";
+@import "../common/colors";
 
 @mixin button {
 	padding: 7px 15px;
-	border-radius: 20px;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 15px;
+	border-radius: 1.25rem; //same as 20px;
+	font-size: 1rem;
 	font-weight: 400;
 }
 
@@ -41,8 +40,8 @@
 
 .button--big {
 	padding: 10px 20px;
-	border-radius: 25px;
-	font-size: 17px;
+	border-radius: 1.56rem; //same as 25px;
+	font-size: 1.06rem; //same as 17px;
 }
 
 .button--heavy {

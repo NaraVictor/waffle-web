@@ -1,32 +1,31 @@
 @import "./colors";
 
 @mixin text($size, $color, $weight: 400) {
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	font-size: $size;
 	color: $color;
 	font-weight: $weight;
 }
 
 .text--primary {
-	@include text(15px, $wf--primary);
+	@include text(1rem, $wf--primary);
 }
 
 .text--black {
-	@include text(15px, $wf--black);
+	@include text(1rem, $wf--black);
 }
 
 .text--primary-bold {
-	@include text(15px, $wf--primary, 700);
+	@include text(1rem, $wf--primary, 700);
 }
 
 .text--black-bold {
-	@include text(15px, $wf--black, 700);
+	@include text(1rem, $wf--black, 700);
 }
 
 .text--primary-big {
-	@include text(20px, $wf--primary, 700);
+	@include text(1rem, $wf--primary, 700);
 }
 
 .text--black-big {
-	@include text(20px, $wf--black, 700);
+	@include text(1rem, $wf--black, 700);
 }

@@ -1,8 +1,7 @@
 .button {
   padding: 7px 15px;
-  border-radius: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 15px;
+  border-radius: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -37,11 +36,114 @@
 
 .button--big {
   padding: 10px 20px;
-  border-radius: 25px;
-  font-size: 17px;
+  border-radius: 1.56rem;
+  font-size: 1.06rem;
 }
 
 .button--heavy {
   font-weight: 700;
+}
+
+.canvas {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #e7e6e6;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 100%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  padding: 0px;
+  -webkit-box-shadow: 1px 1px 1px #ddd;
+          box-shadow: 1px 1px 1px #ddd;
+}
+
+.card--title {
+  font-weight: 600;
+  color: #373f46;
+  margin: 0px;
+  padding: 15px 10px;
+  border-bottom: 1px solid #e7e6e6;
+}
+
+.card__list-item {
+  position: relative;
+  padding: 15px 10px;
+  border-bottom: 1px solid #e7e6e6;
+}
+
+.card__list-item:last-child {
+  border-bottom: 0px;
+  border-radius: 0 0 10px 10px;
+}
+
+.card__list-item:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.card__list--title {
+  font-weight: 600;
+  color: #373f46;
+  margin: 0px;
+  padding: 0px;
+}
+
+.card__list--text {
+  font-weight: 400;
+  color: #5b7083;
+  font-size: 14px;
+  margin: 3px 0px;
+}
+
+.search {
+  border-radius: 1.25rem;
+  position: absolute;
+  background-color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search__input {
+  width: 85%;
+  background-color: transparent;
+  border: none;
+  right: 0;
+  margin: 1.5% 0;
+  font-size: 1rem;
+}
+
+.search__input:focus {
+  outline: none;
+}
+
+.search__icon {
+  position: relative;
+  width: 5%;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+.mobile-nav {
+  border-radius: 1.25rem;
+  background-color: #005fb9;
+  width: 90%;
+  margin: auto;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f4f8fb;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */
