@@ -9,13 +9,92 @@
 */
 
 //urls constants object
-const urls = {
-	home: {
+const urls = [
+	{
 		label: "Home",
-		url: "url",
+		url: "/",
 		icons: {
-			active: "url",
-			inactive: "url",
+			white: {
+				active: "images/nav/white-home-filled.png",
+				inactive: "images/nav/white-home-outline.png",
+			},
+			blue: {
+				active: "",
+				inactive: "",
+			},
 		},
 	},
-};
+	{
+		label: "Discover",
+		url: "discoverurl",
+		icons: {
+			white: {
+				active: "images/nav/white-search-filled.png",
+				inactive: "images/nav/white-search-outline.png",
+			},
+			blue: {
+				active: "",
+				inactive: "",
+			},
+		},
+	},
+	{
+		label: "Classes",
+		url: "classesurl",
+		icons: {
+			white: {
+				active: "images/nav/white-classes-filled.png",
+				inactive: "images/nav/white-classes-outline.png",
+			},
+			blue: {
+				active: "",
+				inactive: "",
+			},
+		},
+	},
+	{
+		label: "Profile",
+		url: "url",
+		icons: {
+			white: {
+				active: "images/nav/white-home-filled.png",
+				inactive: "images/nav/white-user-outline.png",
+			},
+			blue: {
+				active: "",
+				inactive: "",
+			},
+		},
+	},
+
+	{
+		label: "About",
+		url: "url",
+		icons: {
+			white: {
+				active: "images/nav/white-home-outline.png",
+				inactive: "images/nav/white-home-filled.png",
+			},
+			blue: {
+				active: "",
+				inactive: "",
+			},
+		},
+	},
+	{
+		label: "Help",
+		url: "url",
+		icons: {
+			white: {
+				active: "images/nav/white-home-outline.png",
+				inactive: "images/nav/white-home-filled.png",
+			},
+			blue: {
+				active: "",
+				inactive: "",
+			},
+		},
+	},
+];
+
+export { urls };

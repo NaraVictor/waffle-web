@@ -1,8 +1,33 @@
 @import "../common/colors";
 
 .mobile-nav {
-	border-radius: 1.25rem;
+	border-radius: 2rem;
 	background-color: $wf--primary;
-	width: 90%;
-	margin: auto;
+	width: 90vw;
+	margin: 0 5%;
+	position: absolute;
+	bottom: 10px;
+}
+
+.mobile-nav__items {
+	display: flex;
+	justify-content: space-around;
+}
+
+.mobile-nav__item {
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 0;
+	padding: 0px;
+
+	& p {
+		font-size: 13px;
+		margin: 0;
+	}
+}
+
+.mobile-nav__img {
+	width: 8vw;
+	margin: 0px;
 }

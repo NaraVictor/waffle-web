@@ -18,5 +18,3 @@ export {
 	PrimaryNavigation,
 	SecondaryNavigation,
 } from "./navigation/navigations";
-
-// ------------views
