@@ -18,3 +18,6 @@ export {
 	PrimaryNavigation,
 	SecondaryNavigation,
 } from "./navigation/navigations";
+
+// post
+export { Post } from "./post/post";

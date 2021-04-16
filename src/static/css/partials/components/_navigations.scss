@@ -1,5 +1,6 @@
 @import "../common/colors";
 
+// mobile navigations
 .mobile-nav {
 	border-radius: 2rem;
 	background-color: $wf--primary;
@@ -30,4 +31,135 @@
 .mobile-nav__img {
 	width: 8vw;
 	margin: 0px;
+}
+
+.mobile-nav__item--active {
+	filter: grayscale(0);
+}
+
+// secondary navigation
+.seconday-nav {
+	padding: 1vh 10vw;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	& .search {
+		max-width: 25vw;
+	}
+
+	& .nav__logo {
+		margin: 0px;
+		width: 40px;
+
+		& ~ span::after {
+			content: " | ";
+			margin-right: 5px;
+		}
+
+		& ~ span {
+			margin-left: 10px;
+		}
+	}
+
+	& .nav__item {
+		padding: 0 5px;
+		text-decoration: none;
+		color: wf--black-80;
+	}
+
+	& .nav__button {
+		display: none;
+	}
+
+	.nav__items {
+		margin: 0px;
+		display: flex;
+		align-items: center;
+	}
+}
+
+.nav__item--active {
+	font-weight: 700;
+	color: $wf--primary-shaded;
+}
+
+// Primary nav
+.primary-nav {
+	display: flex;
+	// flex-direction: column;
+
+	& .nav__items {
+		display: inline-block;
+
+		& img {
+			width: 2vw;
+			margin-right: 10px;
+		}
+	}
+
+	& .nav__item {
+		margin-bottom: 30px;
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: $wf--black-80;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	// secondary nav mobile version
+	.seconday-nav {
+		// background-color: red;
+		height: 100vh;
+		padding: 5%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+
+		& .nav__logo {
+			margin-top: 50px;
+			width: 50px;
+
+			& ~ span::after {
+				content: "";
+			}
+
+			& ~ span {
+				// display: none;
+				margin: 0 0 10px 0;
+				font-size: 25px;
+				font-weight: 700;
+				color: $wf--black-80;
+			}
+		}
+
+		& .search {
+			display: none;
+		}
+
+		& .nav__button {
+			display: inline-block;
+		}
+
+		& .nav__item {
+			display: block !important;
+			padding: 10px 0;
+			font-size: 19px;
+			width: 100%;
+			border-bottom: 1px solid gray;
+		}
+	}
+
+	.nav__items {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.nav__item-avatar {
+		display: none;
+	}
 }
