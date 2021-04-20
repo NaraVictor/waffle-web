@@ -32,7 +32,11 @@ function App() {
 
 					<div className="col-6">
 						<Canvas>
-							<Post />
+							<Post text="What is the square of 3 to the power 4 ?" />
+							<Post text="The Lizard has 15 stomach compactments" />
+							<Post text="people, how do I perform division?" />
+							<Post text="class schedules has been changed. Check page for updated timelines" />
+							<Post text="one rule in life is to try to have patients and understand other people's point of view ✌✌👌" />
 						</Canvas>
 					</div>
 					<div className="col-3">
