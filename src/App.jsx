@@ -13,6 +13,7 @@ import {
 	SecondaryNavigation,
 	Post,
 	Canvas,
+	Waf,
 } from "./components/index";
 import { urls } from "./consts/index";
 
@@ -31,6 +32,7 @@ function App() {
 					</div>
 
 					<div className="col-6">
+						<Waf />
 						<Canvas>
 							<Post text="What is the square of 3 to the power 4 ?" />
 							<Post text="The Lizard has 15 stomach compactments" />

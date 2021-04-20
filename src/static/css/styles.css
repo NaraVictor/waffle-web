@@ -436,6 +436,47 @@
           align-items: center;
 }
 
+.waf {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #e7e6e6;
+  padding: 20px;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.waf:hover {
+  background-color: #f4f8fb;
+}
+
+.waf-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.waf-header {
+  font-size: 20px;
+  color: #5b7083;
+}
+
+.waf__text p {
+  margin: 0px;
+}
+
+.waf-small {
+  font-size: small;
+  color: #888;
+}
+
 .text--primary {
   font-size: 1rem;
   color: #005fb9;

@@ -21,3 +21,6 @@ export {
 
 // post
 export { Post } from "./post/post";
+
+// waf
+export { Waf } from "./waf/waf";

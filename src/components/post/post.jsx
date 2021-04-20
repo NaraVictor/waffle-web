@@ -1,4 +1,4 @@
-import logo from "../../static/img/pp.jpg";
+import dp from "../../static/img/pp.jpg";
 import React, { Component } from "react";
 
 // reactions
@@ -21,7 +21,7 @@ class Post extends Component {
 				<div className="post__head">
 					<div className="post__user">
 						<div className="user-avatar">
-							<img src={logo} alt="" />
+							<img src={dp} alt="" />
 						</div>
 						<div className="user-info">
 							<h5 className="post-user">Gemat</h5>
