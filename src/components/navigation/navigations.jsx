@@ -10,6 +10,7 @@ function PrimaryNavigation() {
 			<div className="nav__items">
 				<NavLink
 					to="/"
+					exact
 					className="nav__item"
 					activeClassName="nav__item--active">
 					<img src={homeIcon} alt="classes icon" />
@@ -36,10 +37,10 @@ function SecondaryNavigation() {
 				<span className="button-line"></span>
 			</button>
 			<div className="nav__items">
-				{/* <div > */}
-				<img src={logo} alt="waffle logo" className="nav__logo" />
-				<span>waffle</span>
-				{/* </div> */}
+				<NavLink to="/">
+					<img src={logo} alt="waffle logo" className="nav__logo" />
+					<span>waffle</span>
+				</NavLink>
 				<NavLink
 					to="/about"
 					activeClassName="nav__item--active"
@@ -98,4 +99,8 @@ function MobileNavigation({ items }) {
 	);
 }
 
-export { PrimaryNavigation, SecondaryNavigation, MobileNavigation };
+function SubNav(props) {
+	return <nav className={`sub-nav ${props.classes}`}>{props.children}</nav>;
+}
+
+export { PrimaryNavigation, SecondaryNavigation, MobileNavigation, SubNav };

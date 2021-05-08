@@ -108,6 +108,22 @@
 	}
 }
 
+// sub navigation
+.sub-nav,
+.sub-nav__item {
+	color: $wf--black-80;
+	font-weight: 500;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.active-sub-nav {
+	font-weight: 700;
+	border-bottom: 3px solid $wf--primary;
+}
+
 @media screen and (max-width: 600px) {
 	// secondary nav mobile version
 	.seconday-nav {

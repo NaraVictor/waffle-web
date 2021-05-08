@@ -1,0 +1,52 @@
+@import "../common/colors";
+
+.class-list {
+	display: flex;
+	width: 100%;
+	justify-content: stretch;
+	align-items: center;
+}
+
+.class-list__title {
+	font-weight: 500;
+	color: $wf--black-80;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.class-list,
+.class-list__title {
+	transition: color 0.2s linear;
+	&:hover {
+		cursor: pointer;
+		color: $wf--primary;
+	}
+}
+
+.class-list__img img {
+	width: 50px;
+}
+
+.class-list__body {
+	width: 75%;
+	margin: 0 0 0 9px;
+
+	& h6 {
+		margin: 0px;
+	}
+}
+
+.class-list__detail {
+	font-weight: 400;
+	margin: 0px;
+	font-size: 15px;
+
+	& p,
+	a {
+		color: #999;
+		display: inline;
+		margin: 0px;
+	}
+}
