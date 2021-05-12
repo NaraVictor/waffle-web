@@ -31,7 +31,7 @@ var addTwoNumbers = function (num1, num2) {
 4. live streaming 
 5. network status broadcaster (online/offline)
 6. social interactions utilities (tools handling n effecting)
-7. xxx
+7. slug producer - url friendly creator - take strings n turn into url friendly text
 
 */
 

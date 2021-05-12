@@ -5,22 +5,36 @@ import { Switch, Route } from "react-router-dom";
 import { SecondaryNavigation } from "../components/index";
 
 // views
-import { HomePage, Classes, About, Help, ClassDetail } from "../views/index";
+import {
+	HomePage,
+	Classes,
+	About,
+	Help,
+	ClassDetail,
+	Institution,
+	Login,
+	SignUp,
+} from "../views/index";
 
 const SiteRoutes = (props) => {
 	return (
-		<Switch>
-			<div className="page-container">
-				<SecondaryNavigation />
-				<div className="mt-3">
+		<div className="page-container">
+			{/* <SecondaryNavigation /> */}
+			<div className="mt-3">
+				<Switch>
 					<Route path="/about" component={About} />
 					<Route path="/help" component={Help} />
-					<Route path="/classes" exact component={Classes} />
+					<Route path="/classes" component={Classes} />
+					<Route path="/home" component={HomePage} />
+					<Route path="/signup" exact component={SignUp} />
+
+					{/* parametized routes */}
 					<Route path="/classes/:classname" component={ClassDetail} />
-					<Route path="/" exact component={HomePage} />
-				</div>
+					<Route path="/:institution" component={Institution} />
+					<Route path="/" exact component={Login} />
+				</Switch>
 			</div>
-		</Switch>
+		</div>
 	);
 };
 

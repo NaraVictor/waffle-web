@@ -610,6 +610,34 @@
           align-items: flex-end;
 }
 
+.detail__summary {
+  border-left: 1px solid #ddd;
+}
+
+.profile-cover {
+  background-color: #005fb9;
+}
+
+.login {
+  text-align: center;
+  margin-top: 7%;
+}
+
+.login__logo {
+  max-width: 10vw;
+  max-height: 10vh;
+}
+
+.live-session {
+  padding: 1px 6px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  margin: 2px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
 body {
   margin: 0px;
   padding: 0px;

@@ -9,7 +9,7 @@ function PrimaryNavigation() {
 		<nav className="primary-nav">
 			<div className="nav__items">
 				<NavLink
-					to="/"
+					to="/home"
 					exact
 					className="nav__item"
 					activeClassName="nav__item--active">
