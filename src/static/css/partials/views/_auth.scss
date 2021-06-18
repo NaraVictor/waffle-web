@@ -1,9 +1,36 @@
 .login {
 	text-align: center;
 	margin-top: 7%;
+	max-width: 25vw;
+	// display: flex;
+	// justify-content: center;
+}
+
+.login__links {
+	display: flex;
+	justify-content: space-around;
 }
 
 .login__logo {
 	max-width: 10vw;
 	max-height: 10vh;
+}
+
+.login__header {
+	border-radius: 5px 5px 0 0;
+}
+
+.signup {
+	text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+	.login {
+		margin-top: 15vh;
+		max-width: 90vw;
+	}
+}
+
+.auth_logo {
+	height: 10vh;
 }

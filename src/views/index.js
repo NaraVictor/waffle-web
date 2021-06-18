@@ -5,4 +5,5 @@ export { Help } from "./help/index";
 export { ClassDetail } from "./classes/detail";
 export { Institution } from "./profile/index";
 export { Login } from "./auth/login";
+export { Login2 } from "./auth/login-2";
 export { SignUp } from "./auth/signup";

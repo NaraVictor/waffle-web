@@ -587,15 +587,120 @@
 }
 
 .text--primary-big {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #005fb9;
   font-weight: 700;
 }
 
 .text--black-big {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #0f1419;
   font-weight: 700;
+}
+
+/* Default styling
+ * https://github.com/tonystar/float-label-css/blob/master/scss/float-label.scss
+ */
+.has-float-label {
+  display: block;
+  position: relative;
+}
+
+.has-float-label label,
+.has-float-label > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: text;
+  font-size: 75%;
+  opacity: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  padding-left: 0.5em;
+}
+
+.has-float-label select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.has-float-label input,
+.has-float-label select {
+  font-size: inherit;
+  padding-top: 1em;
+  padding-left: 0.5em;
+  margin-bottom: 2px;
+  border: 0;
+}
+
+.has-float-label input::-webkit-input-placeholder,
+.has-float-label select::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.has-float-label input:-ms-input-placeholder,
+.has-float-label select:-ms-input-placeholder {
+  opacity: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.has-float-label input::-ms-input-placeholder,
+.has-float-label select::-ms-input-placeholder {
+  opacity: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.has-float-label input::placeholder,
+.has-float-label select::placeholder {
+  opacity: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.has-float-label input:placeholder-shown:not(:focus)::-webkit-input-placeholder,
+.has-float-label select:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.has-float-label input:placeholder-shown:not(:focus):-ms-input-placeholder,
+.has-float-label select:placeholder-shown:not(:focus):-ms-input-placeholder {
+  opacity: 0;
+}
+
+.has-float-label input:placeholder-shown:not(:focus)::-ms-input-placeholder,
+.has-float-label select:placeholder-shown:not(:focus)::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.has-float-label input:placeholder-shown:not(:focus)::placeholder,
+.has-float-label select:placeholder-shown:not(:focus)::placeholder {
+  opacity: 0;
+}
+
+.has-float-label input:placeholder-shown:not(:focus) + *,
+.has-float-label select:placeholder-shown:not(:focus) + * {
+  font-size: 100%;
+  opacity: 0.5;
+  top: 0.5em;
+}
+
+.has-float-label input:focus,
+.has-float-label select:focus {
+  outline: none;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.has-float-label select {
+  padding-right: 1em;
+}
+
+.form__control {
+  border-radius: 5px;
 }
 
 .class-detail__head {
@@ -621,11 +726,39 @@
 .login {
   text-align: center;
   margin-top: 7%;
+  max-width: 25vw;
+}
+
+.login__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .login__logo {
   max-width: 10vw;
   max-height: 10vh;
+}
+
+.login__header {
+  border-radius: 5px 5px 0 0;
+}
+
+.signup {
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .login {
+    margin-top: 15vh;
+    max-width: 90vw;
+  }
+}
+
+.auth_logo {
+  height: 10vh;
 }
 
 .live-session {

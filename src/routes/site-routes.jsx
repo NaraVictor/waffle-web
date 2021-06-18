@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 // components
 import { SecondaryNavigation } from "../components/index";
@@ -19,19 +19,20 @@ import {
 const SiteRoutes = (props) => {
 	return (
 		<div className="page-container">
-			{/* <SecondaryNavigation /> */}
+			<SecondaryNavigation />
 			<div className="mt-3">
 				<Switch>
 					<Route path="/about" component={About} />
 					<Route path="/help" component={Help} />
 					<Route path="/classes" component={Classes} />
 					<Route path="/home" component={HomePage} />
-					<Route path="/signup" exact component={SignUp} />
 
 					{/* parametized routes */}
+					<Route path="/signup" exact component={SignUp} />
+					<Route path="/login" exact component={Login} />
 					<Route path="/classes/:classname" component={ClassDetail} />
 					<Route path="/:institution" component={Institution} />
-					<Route path="/" exact component={Login} />
+					<Redirect from="/" to="/login" />
 				</Switch>
 			</div>
 		</div>

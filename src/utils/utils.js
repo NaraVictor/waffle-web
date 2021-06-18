@@ -1,3 +1,5 @@
+import Joi from "joi";
+
 // function documentation code example below
 // consider using a single index file to export all modules - re-export
 
@@ -43,4 +45,32 @@ function sayBye(user) {
 	alert(`Bye, ${user}!`);
 }
 
-export { sayHi, sayBye }; // a list of exported variables
+const validateLogin = (user) => {
+	const schema = Joi.object({
+		username: Joi.string().min(4).max(100).required().label("Username"),
+		password: Joi.string().min(6).max(100).required().label("Password"),
+	});
+
+	return schema.validate(user);
+};
+
+// @BUG: email validation isnt working when email mthd attached to key
+const validateSignup = (userData) => {
+	const schema = Joi.object().keys({
+		firstname: Joi.string().min(3).max(255).required().label("First name"),
+		lastname: Joi.string().min(3).max(255).required().label("Last name"),
+		username: Joi.string().min(4).max(100).required().label("Username"),
+		phoneNumber: Joi.string().min(10).max(17).required().label("Phone number"),
+		email: Joi.string().required().label("Email"),
+		password: Joi.string().min(6).max(100).required().label("Password"),
+		confirmPassword: Joi.string()
+			.min(6)
+			.max(100)
+			.required()
+			.label("Confirm Password"),
+	});
+
+	return schema.validate(userData);
+};
+
+export { validateLogin, validateSignup };

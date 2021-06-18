@@ -1,20 +1,20 @@
-function DefaultButton({ big, heavy, classes, click, children }) {
+function DefaultButton({ big, heavy, classes, click, children, ...props }) {
 	return (
 		<button
 			className={`button button__default ${big && "button--big"} 
             ${heavy && "button--heavy"} ${classes}`}
-			onClick={() => click()}>
+			{...props}>
 			{children}
 		</button>
 	);
 }
 
-function PrimaryButton({ big, heavy, classes, click, children }) {
+function PrimaryButton({ big, heavy, classes, click, children, ...props }) {
 	return (
 		<button
 			className={`button button__primary ${big && "button--big"} 
             ${heavy && "button--heavy"} ${classes}`}
-			onClick={() => click()}>
+			{...props}>
 			{children}
 		</button>
 	);

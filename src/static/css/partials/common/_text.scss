@@ -23,9 +23,9 @@
 }
 
 .text--primary-big {
-	@include text(1rem, $wf--primary, 700);
+	@include text(1.5rem, $wf--primary, 700);
 }
 
 .text--black-big {
-	@include text(1rem, $wf--black, 700);
+	@include text(1.5rem, $wf--black, 700);
 }
