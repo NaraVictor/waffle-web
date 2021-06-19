@@ -63,47 +63,47 @@ function SecondaryNavigation() {
 	);
 }
 
-function MobileNavItem({ icon, activeIcon, label, url }) {
-	return (
-		<NavLink
-			to={url}
-			className="mobile-nav__item"
-			activeClassName="mobile-nav__item--active">
-			<img src={icon} className="mobile-nav__img" alt="navigation icon" />
-			<p className="mobile-nav__label">{label}</p>
-		</NavLink>
-	);
-}
+// function MobileNavItem({ icon, activeIcon, label, url }) {
+// 	return (
+// 		<NavLink
+// 			to={url}
+// 			className="mobile-nav__item"
+// 			activeClassName="mobile-nav__item--active">
+// 			<img src={icon} className="mobile-nav__img" alt="navigation icon" />
+// 			<p className="mobile-nav__label">{label}</p>
+// 		</NavLink>
+// 	);
+// }
 
 
 // change props to {items}
-function MobileNavigation(props) {
-	// refactor and abstract code after it works
-	// const labels = ["Home", "Discover", "Profile", "Classes"];
+// function MobileNavigation(props) {
+// 	// refactor and abstract code after it works
+// 	// const labels = ["Home", "Discover", "Profile", "Classes"];
 
-	return (
-		<div className="mobile-nav">
-			<div className="mobile-nav__items">
-			hello world
-				{/* {items.map((item)=> {
-					if (labels.includes(item.label)) {
-						return (
-							<MobileNavItem
-								key={item.label}
-								label={item.label}
-								url={item.url}
-								icon={item.icons.white.inactive}
-							/>
-						);
-					}
-				})} */}
-			</div>
-		</div>
-	);
-}
+// 	return (
+// 		<div className="mobile-nav">
+// 			<div className="mobile-nav__items">
+// 			hello world
+// 				{/* {items.map((item)=> {
+// 					if (labels.includes(item.label)) {
+// 						return (
+// 							<MobileNavItem
+// 								key={item.label}
+// 								label={item.label}
+// 								url={item.url}
+// 								icon={item.icons.white.inactive}
+// 							/>
+// 						);
+// 					}
+// 				})} */}
+// 			</div>
+// 		</div>
+// 	);
+// }
 
 function SubNav(props) {
 	return <nav className={`sub-nav ${props.classes}`}>{props.children}</nav>;
 }
 
-export { PrimaryNavigation, SecondaryNavigation, MobileNavigation, SubNav };
+export { PrimaryNavigation, SecondaryNavigation, SubNav };

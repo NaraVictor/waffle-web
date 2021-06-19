@@ -15,7 +15,7 @@ export { Search } from "./search/search";
 
 // navigations
 export {
-	MobileNavigation,
+	
 	PrimaryNavigation,
 	SecondaryNavigation,
 	SubNav,
