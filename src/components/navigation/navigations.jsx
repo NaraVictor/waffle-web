@@ -82,7 +82,8 @@ function MobileNavigation({ items }) {
 	return (
 		<div className="mobile-nav">
 			<div className="mobile-nav__items">
-				{items.map((item)=> {
+			hello world
+				{/* {items.map((item)=> {
 					if (labels.includes(item.label)) {
 						return (
 							<MobileNavItem
@@ -93,8 +94,7 @@ function MobileNavigation({ items }) {
 							/>
 						);
 					}
-					return;
-				})}
+				})} */}
 			</div>
 		</div>
 	);
