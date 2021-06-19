@@ -75,9 +75,11 @@ function MobileNavItem({ icon, activeIcon, label, url }) {
 	);
 }
 
-function MobileNavigation({ items }) {
+
+// change props to {items}
+function MobileNavigation(props) {
 	// refactor and abstract code after it works
-	const labels = ["Home", "Discover", "Profile", "Classes"];
+	// const labels = ["Home", "Discover", "Profile", "Classes"];
 
 	return (
 		<div className="mobile-nav">
