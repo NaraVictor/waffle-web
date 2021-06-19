@@ -20,9 +20,9 @@ import Joi from "joi";
  * @param  {Number} num2 The second number
  * @return {Number}      The total of the two numbers
  */
-var addTwoNumbers = function (num1, num2) {
-	return num1 + num2;
-};
+// var addTwoNumbers = function (num1, num2) {
+// 	return num1 + num2;
+// };
 
 // utils
 /*
@@ -37,13 +37,13 @@ var addTwoNumbers = function (num1, num2) {
 
 */
 
-function sayHi(user) {
-	alert(`Hello, ${user}!`);
-}
+// function sayHi(user) {
+// 	alert(`Hello, ${user}!`);
+// }
 
-function sayBye(user) {
-	alert(`Bye, ${user}!`);
-}
+// function sayBye(user) {
+// 	alert(`Bye, ${user}!`);
+// }
 
 const validateLogin = (user) => {
 	const schema = Joi.object({

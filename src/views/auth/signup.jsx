@@ -3,10 +3,9 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { DefaultButton } from "../../components";
+// import { DefaultButton } from "../../components";
 import logo from "../../static/img/logo.png";
 import { validateSignup } from "../../utils/utils";
-import Joi from "joi";
 
 const SignUp = (props) => {
 	const { register, handleSubmit } = useForm();
